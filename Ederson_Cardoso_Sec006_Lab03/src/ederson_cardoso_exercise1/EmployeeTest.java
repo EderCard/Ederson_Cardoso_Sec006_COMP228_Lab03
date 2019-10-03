@@ -19,5 +19,11 @@ public class EmployeeTest {
 		HourlyEmployee hourlyEmployee = new HourlyEmployee(3, "Samantha", "Care", 40.0, 16.0);
 		System.out.println(hourlyEmployee.toString());
 
+		// *************************************************************************************
+		System.out.println("---SalariedEmployee Test---");
+		SalariedEmployee salariedEmployee = new SalariedEmployee(4, "Matin", "Back", 500);
+		System.out.println(salariedEmployee.toString());
+
+		
 	} // end main
 } // and class

@@ -52,7 +52,7 @@ public class HourlyEmployee extends Employee {
 		setHoursPerWeek(hoursPerWeek);
 
 		setHourRate(hourRate);
-	}
+	} // end constructor
 
 	// This method calculate earnings based on hoursPerWeek and hourRate
 	@Override
@@ -65,4 +65,5 @@ public class HourlyEmployee extends Employee {
 		return String.format("%s%nHours per week = %.2f%nHour Rate = $%.2f%nEarnings = $%.2f%n", super.toString(),
 				getHoursPerWeek(), getHourRate(), earnings());
 	}
-}
+	
+} // end class
