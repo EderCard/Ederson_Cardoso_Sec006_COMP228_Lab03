@@ -7,6 +7,10 @@ public class EmployeeTest {
 		CommissionEmployee commissionEmployee = new CommissionEmployee(1, "Ederson", "Cardoso", 1500.0, .5);
 		System.out.println(commissionEmployee.toString());
 
+		// *************************************************************************************
+		System.out.println("---HourlyEmployee Test---");
+		HourlyEmployee hourlyEmployee = new HourlyEmployee(2, "Samantha", "Care", 40.0, 16.0);
+		System.out.println(hourlyEmployee.toString());
 		
 	} // end main
 } // and class
