@@ -53,6 +53,7 @@ public class CommissionEmployee extends Employee {
 	/**
 	 * This method calculate earnings based on commissionRate and grossSales
 	 */
+	@Override
 	public double earnings() {
 		return getCommissionRate() * getGrossSales() / 100;
 	}

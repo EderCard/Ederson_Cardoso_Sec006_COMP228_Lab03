@@ -10,7 +10,7 @@ public class EmployeeTest {
 		// *************************************************************************************
 		System.out.println("---BasePluCommissionEmployee Test---");
 		// Default constructor with all arguments
-		BasePlusCommissionEmployee basePlusCommissionEmployee = new BasePlusCommissionEmployee(2, "Rose", "Smith", 500.00, 0.5, -1000.0);
+		BasePlusCommissionEmployee basePlusCommissionEmployee = new BasePlusCommissionEmployee(2, "Rose", "Smith", 500.00, 0.5, 1000.0);
 		System.out.println(basePlusCommissionEmployee.toString());
 
 		
@@ -23,6 +23,12 @@ public class EmployeeTest {
 		System.out.println("---SalariedEmployee Test---");
 		SalariedEmployee salariedEmployee = new SalariedEmployee(4, "Matin", "Back", 500);
 		System.out.println(salariedEmployee.toString());
+
+		
+		// *************************************************************************************
+		System.out.println("---PieceWorker Test---");
+		PieceWorker pieceWorker = new PieceWorker(4, "Susy", "Macan", 500, 2000);
+		System.out.println(pieceWorker.toString());
 
 		
 	} // end main

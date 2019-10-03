@@ -34,6 +34,7 @@ public class SalariedEmployee extends Employee {
 	} // end constructor
 
 	// This method calculate earnings based on weeklySalary
+	@Override
 	public double earnings() {
 		return weeklySalary;
 	}

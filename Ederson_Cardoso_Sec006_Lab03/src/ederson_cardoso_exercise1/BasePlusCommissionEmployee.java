@@ -43,6 +43,6 @@ public class BasePlusCommissionEmployee extends CommissionEmployee // inheritanc
 	// This method override the default toString method
 	@Override
 	public String toString() {
-		return String.format("%s%nBase Salary = $%.2f%nEarnings = $%.2f%n", super.toString(), baseSalary, earnings());
+		return String.format("%s%nBase Salary = %.2f%nEarnings = $%.2f%n", super.toString(), baseSalary, earnings());
 	}
 }
