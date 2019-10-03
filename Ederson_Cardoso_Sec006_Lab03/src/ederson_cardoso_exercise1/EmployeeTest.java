@@ -8,9 +8,16 @@ public class EmployeeTest {
 		System.out.println(commissionEmployee.toString());
 
 		// *************************************************************************************
-		System.out.println("---HourlyEmployee Test---");
-		HourlyEmployee hourlyEmployee = new HourlyEmployee(2, "Samantha", "Care", 40.0, 16.0);
-		System.out.println(hourlyEmployee.toString());
+		System.out.println("---BasePluCommissionEmployee Test---");
+		// Default constructor with all arguments
+		BasePlusCommissionEmployee basePlusCommissionEmployee = new BasePlusCommissionEmployee(2, "Rose", "Smith", 500.00, 0.5, -1000.0);
+		System.out.println(basePlusCommissionEmployee.toString());
+
 		
+		// *************************************************************************************
+		System.out.println("---HourlyEmployee Test---");
+		HourlyEmployee hourlyEmployee = new HourlyEmployee(3, "Samantha", "Care", 40.0, 16.0);
+		System.out.println(hourlyEmployee.toString());
+
 	} // end main
 } // and class
