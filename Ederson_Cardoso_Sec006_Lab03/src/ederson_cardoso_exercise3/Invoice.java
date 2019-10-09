@@ -1,5 +1,5 @@
 // Invoice class that implements Payable.
-package ederson_cardoso_exercise2;
+package ederson_cardoso_exercise3;
 
 public class Invoice implements IPayable {
    private final String partNumber; 
@@ -50,4 +50,4 @@ public class Invoice implements IPayable {
    public double getPaymentAmount() {                                  
       return getQuantity() * getPricePerItem(); // calculate total cost
    }                                                                   
-}
+} 
