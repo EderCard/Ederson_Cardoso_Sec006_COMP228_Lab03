@@ -1,4 +1,4 @@
-package ederson_cardoso_exercise1;
+package ederson_cardoso_exercise2;
 
 public class CommissionEmployee extends Employee {
 	// instance data members
@@ -54,14 +54,16 @@ public class CommissionEmployee extends Employee {
 	 * This method calculate earnings based on commissionRate and grossSales
 	 */
 	@Override
-	public double earnings() {
+	public double getPaymentAmount() {
 		return getCommissionRate() * getGrossSales() / 100;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("%s%nGross Sales = $%.2f%nCommission Rate = %.2f%%", super.toString(), grossSales,
+		return String.format("%s%nGross Sales: $%,.2f%nCommission Rate: %.2f%%", super.toString(), grossSales,
 				commissionRate);
 	}
+	
+	
 
 } // end class

@@ -1,4 +1,4 @@
-package ederson_cardoso_exercise1;
+package ederson_cardoso_exercise2;
 
 public class HourlyEmployee extends Employee {
 	// instance data members
@@ -56,13 +56,13 @@ public class HourlyEmployee extends Employee {
 
 	// This method calculate earnings based on hoursPerWeek and hourRate
 	@Override
-	public double earnings() {
+	public double getPaymentAmount() {
 		return getHoursPerWeek() * getHourRate();
 	}
 
 	@Override
 	public String toString() {
-		return String.format("%s%nHours per week = %.2f%nHour Rate = $%.2f%n", super.toString(),
+		return String.format("%s%nHours per week: %.2f%nHour Rate: $%.2f%n", super.toString(),
 				getHoursPerWeek(), getHourRate());
 	}
 	

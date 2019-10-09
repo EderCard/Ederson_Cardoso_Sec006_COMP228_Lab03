@@ -1,4 +1,4 @@
-package ederson_cardoso_exercise1;
+package ederson_cardoso_exercise2;
 
 public class SalariedEmployee extends Employee {
 	// instance data members
@@ -35,10 +35,10 @@ public class SalariedEmployee extends Employee {
 
 	// This method calculate earnings based on weeklySalary
 	@Override
-	public double earnings() {
+	public double getPaymentAmount() {
 		return weeklySalary;
 	}
-
+	
 	@Override
 	public String toString() {
 		return String.format("%s%nWeekely Salary: $%,.2f%n", super.toString(), weeklySalary);

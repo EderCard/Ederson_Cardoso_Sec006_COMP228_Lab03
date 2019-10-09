@@ -1,4 +1,4 @@
-package ederson_cardoso_exercise1;
+package ederson_cardoso_exercise2;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee // inheritance
 {
@@ -35,15 +35,15 @@ public class BasePlusCommissionEmployee extends CommissionEmployee // inheritanc
 
 	// This method calculate earnings
 	@Override
-	public double earnings() {
+	public double getPaymentAmount() {
 		// return (getCommissionRate() * getGrossSales()/ 100) + baseSalary;
-		return super.earnings() + baseSalary;
+		return super.getPaymentAmount() + baseSalary;
 	}
 
 	// This method override the default toString method
 	@Override
 	public String toString() {
-		return String.format("%s%nBase Salary = $%,.2f%n", super.toString(), baseSalary);
+		return String.format("%s%nBase Salary: $%,.2f%n", super.toString(), baseSalary);
 	}
 	
 } // end class

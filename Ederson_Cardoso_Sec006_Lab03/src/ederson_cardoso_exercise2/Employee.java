@@ -1,6 +1,6 @@
-package ederson_cardoso_exercise1;
+package ederson_cardoso_exercise2;
 
-public abstract class Employee {
+public abstract class Employee implements IPayable{
 	// instance data members
 	private int employeeId;
 	private String firstName;
@@ -51,11 +51,11 @@ public abstract class Employee {
 	} // end constructor
 
 	// abstract class, they don't have body
-	public abstract double earnings();
+	public abstract double getPaymentAmount();
 
 	@Override
 	public String toString() {
-		return String.format("Employee Id = %s%nFirst Name = %s%nLast Name = %s%n", employeeId, firstName, lastName);
+		return String.format("Employee Id: %s%nFirst Name: %s%nLast Name: %s%n", employeeId, firstName, lastName);
 	}
 
 } // end class
